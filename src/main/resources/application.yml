@@ -1,0 +1,15 @@
+spring:
+ application:
+  name: "spro-service-registry"
+
+server:
+ port: 8761
+
+eureka:
+ instance:
+  hostname: localhost
+ client:
+ # Setting Up False so that Eureka doesnt register itself on server registry
+  register-with-eureka: false
+ # Since this is eureka server itself , it doesnt need to download service registory information , it already has it
+  fetch-registry: false
