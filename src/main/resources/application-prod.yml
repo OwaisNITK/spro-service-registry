@@ -1,11 +1,9 @@
 spring:
  application:
   name: "spro-service-registry"
- profiles:
-  active: dev
-  
+
 server:
- port: 8760
+ port: 8763
 
 eureka:
  instance:
